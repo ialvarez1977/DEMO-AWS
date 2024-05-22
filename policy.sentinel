@@ -1,0 +1,14 @@
+import "tfplan"
+import "strings"
+
+# Regla principal que verifica si se está intentando crear un bucket
+main = rule {
+  all tfplan.resource_changes as _, rc {
+    rc.type is "aws_s3_bucket" and rc.change.actions contains "create"
+  } else {
+    true
+  }
+}
+
+# Nivel de aplicación de la política
+enforcement_level = "soft-mandatory"
