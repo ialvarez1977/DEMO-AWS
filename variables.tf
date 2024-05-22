@@ -1,20 +1,10 @@
 variable "bucketn" {
     default = "bucket-prueba-Monica"
 }
-variable "bucketn1" {
-    default = "bucket-prueba-Aitana"
-}
-
-variable "bucketn2" {
-    default = "bucket-prueba-Javier"
-}
-
-variable "bucketn3" {
-    default = "bucket-prueba-Candela"
-}
 
 variable "aws_access_key" {
   description = "AWS Access Key"
+  default = "bucket-prueba-Monica"
   type        = string
 }
 
