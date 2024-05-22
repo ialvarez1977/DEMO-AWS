@@ -1,5 +1,5 @@
 variable "bucketn" {
-    default = "bucket_prueba_monica"
+    default = "bucketpruebamonica"
 }
 
 /*variable "aws_access_key" {
